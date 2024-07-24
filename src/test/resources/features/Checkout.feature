@@ -4,7 +4,7 @@ Feature: Verify Checkout Functionality
   Scenario: Verify user can see correct prices on checkout page
     Given user opens the website
     Then verify user is on login page
-    When user enters username "valid.username" and password "valid.password"
+    When user enters username "problem.username" and password "valid.password"
     Then verify user is on home page
     When user click on add to cart button for "Sauce Labs Backpack"
     And user click on add to cart button for "Sauce Labs Bike Light"

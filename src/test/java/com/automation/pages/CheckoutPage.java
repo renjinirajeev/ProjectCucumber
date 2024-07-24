@@ -26,7 +26,8 @@ public class CheckoutPage extends BasePage {
     WebElement taxPrice;
 
     public boolean isCheckoutPageDisplayed() {
-        return finishBtn.isDisplayed() && paymentMethod.isDisplayed();
+
+        return isDisplay(finishBtn) && isDisplay(paymentMethod);
     }
 
     public boolean isFinalPriceIsMatchingWithItemTotalPrice() {

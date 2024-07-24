@@ -10,7 +10,7 @@ public class CheckoutSteps {
 
     @Then("verify user is on checkout page")
     public void verify_user_is_on_checkout_page() {
-        Assert.assertTrue(checkoutPage.isCheckoutPageDisplayed());
+        Assert.assertTrue("user is not in checkout page",checkoutPage.isCheckoutPageDisplayed());
     }
 
     @Then("verify item prices display correctly on checkout page")
